@@ -6,13 +6,11 @@ const BookList = () => (
   <section>
     <NewBook />
     <table>
-
       <p>Book</p>
       <p>Author</p>
       <ul>
         <li><Book /></li>
       </ul>
-      
     </table>
   </section>
 );

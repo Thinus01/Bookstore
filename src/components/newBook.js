@@ -2,7 +2,7 @@ const NewBook = () => (
   <form>
     <input placeholder="Add book name" required />
     <input placeholder="Add author name" required />
-    <button>Submit form</button>
+    <button type="submit">Submit form</button>
   </form>
 );
 
