@@ -31,11 +31,11 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Bookstore: Setup] <a name="about-project"></a>
+# 📖 [Bookstore: add reducers and actions] <a name="about-project"></a>
 
 > I have built a this project using HTML, CSS, JavaScript and React.
 
-**[Bookstore: Setup]** 
+**[Bookstore: add reducers and actions]** 
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -73,7 +73,7 @@
 
 To get a local copy up and running, follow these steps, in cloned directory type the following in your terminal: <p>
 **``git clone https://github.com/Thinus01/Bookstore``** <p>
-**``git checkout feature``** This will change you from the main branch to the feature branch. <p>
+**``git checkout Reducers``** This will change you from the main branch to the Reducers branch. <p>
 **``npm install``** This will ensure that all of the dependancies are installed on your system that is required for the program to run as intended. <p>
 **``npm start``** Since we have everything in its place, its time to run the program. You will notice that when the page loads up it will show a bunch of errors. Let's fix that by typing: 
 **``npx eslint --fix``**. Now that everything is fixed and ready to go. we type in: **``npm start``** for the last time. Now the page works as it should. <p>
@@ -115,7 +115,7 @@ Example commands:
 Install this project with:
 
 Navigate to the location of the folder in your local machine, in cloned directory type the following in your terminal: <p>
-**``git checkout feature``** This will change you from the main branch to the feature branch. <p>
+**``git checkout Reducers``** This will change you from the main branch to the Reducers branch. <p>
 **``npm install``** This will ensure that all of the dependancies are installed on your system that is required for the program to run as intended. <p>
 **``npm start``** Since we have everything in its place, its time to run the program. You will notice that when the page loads up it will show a bunch of errors about "Expected linebreaks to be 'LF' but found 'CRLF' linebreak-style". Let's fix that by typing: 
 **``npx eslint --fix``**. Now that everything is fixed and ready to go. we type in: **``npm start``** for the last time. Now the page works as it should.
