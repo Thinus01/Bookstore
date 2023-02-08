@@ -2,7 +2,21 @@ const ADD = 'bookstore/books/ADD';
 const REMOVE = 'bookstore/books/REMOVE';
 
 const initialState = {
-  books: [],
+  books: [{
+    id: '1',
+    title: 'Slow Brewing Tea',
+    author: 'Randy Loubier',
+  },
+  {
+    id: '2',
+    title: 'The family across the street',
+    author: 'Nicole Trope',
+  },
+  {
+    id: '3',
+    title: 'Verity',
+    author: 'Colleen Hoover',
+  }],
 };
 
 export const addBookAction = (newBook) => ({ type: ADD, newBook });
