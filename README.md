@@ -31,11 +31,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Bookstore: add reducers and actions] <a name="about-project"></a>
+# 📖 [Bookstore: Use Redux in React components] <a name="about-project"></a>
 
 > I have built a this project using HTML, CSS, JavaScript and React.
-
-**[Bookstore: add reducers and actions]** 
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -47,18 +45,13 @@
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
-- **[Core Structure of Bookstore: Setup]**
-
+> Functional submition form, capable of adding and removing books
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-
-> Add a link to your deployed project.
 
 - Not available yet
 <!-- live demo not active as of yet -->
@@ -69,11 +62,9 @@
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
-
 To get a local copy up and running, follow these steps, in cloned directory type the following in your terminal: <p>
 **``git clone https://github.com/Thinus01/Bookstore``** <p>
-**``git checkout Reducers``** This will change you from the main branch to the Reducers branch. <p>
+**``git checkout Immutable``** This will change you from the main branch to the Immutable branch. <p>
 **``npm install``** This will ensure that all of the dependancies are installed on your system that is required for the program to run as intended. <p>
 **``npm start``** Since we have everything in its place, its time to run the program. You will notice that when the page loads up it will show a bunch of errors. Let's fix that by typing: 
 **``npx eslint --fix``**. Now that everything is fixed and ready to go. we type in: **``npm start``** for the last time. Now the page works as it should. <p>
@@ -115,7 +106,7 @@ Example commands:
 Install this project with:
 
 Navigate to the location of the folder in your local machine, in cloned directory type the following in your terminal: <p>
-**``git checkout Reducers``** This will change you from the main branch to the Reducers branch. <p>
+**``git checkout Immutable``** This will change you from the main branch to the Immutable branch. <p>
 **``npm install``** This will ensure that all of the dependancies are installed on your system that is required for the program to run as intended. <p>
 **``npm start``** Since we have everything in its place, its time to run the program. You will notice that when the page loads up it will show a bunch of errors about "Expected linebreaks to be 'LF' but found 'CRLF' linebreak-style". Let's fix that by typing: 
 **``npx eslint --fix``**. Now that everything is fixed and ready to go. we type in: **``npm start``** for the last time. Now the page works as it should.
@@ -165,8 +156,6 @@ Example:
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
-
 👤 **Author1**
 
 - GitHub: [@Thinus01](@Thinus01)
@@ -179,10 +168,10 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
+> What do I plan on adding in the near future?.
 
 - [ ] **[Improved styling]**
-- [ ] **[Functionality of submition form]**
+- [ ] **[Storing submited forms]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -200,8 +189,6 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
-
 If you like this project, give a star.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -209,8 +196,6 @@ If you like this project, give a star.
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-> Give credit to everyone who inspired your codebase.
 
 I would like to thank Microverse, coding partners and my standup team.
 

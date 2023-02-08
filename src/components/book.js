@@ -1,35 +1,26 @@
-import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
+import { removeBookAction } from '../redux/books/books';
 
-// below strings are only placeholders and will be removed when functionality has been implimented
-const Book = ({ title, author }) => (
-  <div>
-    <tr>
-      <td>{ title }</td>
-      <td>{ author }</td>
-    </tr>
-    <button type="submit">Remove</button>
-  </div>
-);
+const Book = (props) => {
+  const { id, title, author } = props;
+  const dispatch = useDispatch();
+  const removeHandler = () => {
+    dispatch(removeBookAction(id));
+  };
+  return (
+    <div>
+      <p>{ title }</p>
+      <p>{ author }</p>
+      <button onClick={removeHandler} type="submit">Remove</button>
+    </div>
+  );
+};
 
 Book.propTypes = {
   title: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
-};
-
-const Display = () => {
-  const [state] = useState({ title: 'book 1', author: 'author 1' });
-  const { title, author } = state;
-  useState({ title, author });
-  return (
-    <>
-      <Book
-        title={title}
-        author={author}
-      />
-    </>
-  );
+  id: PropTypes.string.isRequired,
 };
 
 export default Book;
-export { Display };
