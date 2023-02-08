@@ -5,14 +5,14 @@ import { removeBookAction } from '../redux/books/books';
 const Book = (props) => {
   const { id, title, author } = props;
   const dispatch = useDispatch();
-  const onRemoveBook = () => {
+  const removeHandler = () => {
     dispatch(removeBookAction(id));
   };
   return (
     <div>
       <p>{ title }</p>
       <p>{ author }</p>
-      <button onClick={onRemoveBook} type="submit">Remove</button>
+      <button onClick={removeHandler} type="submit">Remove</button>
     </div>
   );
 };

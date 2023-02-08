@@ -15,7 +15,7 @@ const NewBook = () => {
   };
 
   const dispatch = useDispatch();
-  const onBookSubmit = (e) => {
+  const submitHandler = (e) => {
     e.preventDefault();
     dispatch(addBookAction(bookState));
     setBookState({ id: '', title: '', author: '' });
@@ -24,7 +24,7 @@ const NewBook = () => {
   return (
     <div>
       <h2>ADD NEW BOOK</h2>
-      <form onSubmit={onBookSubmit}>
+      <form onSubmit={submitHandler}>
         <input type="text" name="title" value={bookState.title} onChange={onAddingBook} placeholder="Add book name" required />
         <input type="text" name="author" value={bookState.author} onChange={onAddingBook} placeholder="Add author name" required />
         <button type="submit">Submit form</button>
