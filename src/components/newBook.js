@@ -1,32 +1,34 @@
 import React, { useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { addBookAction } from '../redux/books/books';
+import { useDispatch } from 'react-redux';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { v4 } from 'uuid';
+import { addHandler } from '../redux/books/books';
 
 const NewBook = () => {
-  const [bookState, setBookState] = useState({ id: '', title: '', author: '' });
-  const bookData = useSelector((state) => state.books);
-  const booksArray = bookData.books;
-  const bookID = booksArray.length;
+  const [bookState, setBookState] = useState({
+    id: '', title: '', author: '', category: '',
+  });
 
-  const onAddingBook = (e) => {
+  const addBook = (event) => {
     setBookState({
-      ...bookState, id: (bookID + 1).toString(), [e.target.name]: [e.target.value].toString(),
+      ...bookState, item_id: v4(), [event.target.name]: [event.target.value].toString(),
     });
   };
 
   const dispatch = useDispatch();
-  const submitHandler = (e) => {
-    e.preventDefault();
-    dispatch(addBookAction(bookState));
-    setBookState({ id: '', title: '', author: '' });
+  const submitHandler = (event) => {
+    event.preventDefault();
+    setBookState({ title: '', author: '', category: '' });
+    dispatch(addHandler(bookState));
   };
 
   return (
     <div>
       <h2>ADD NEW BOOK</h2>
       <form onSubmit={submitHandler}>
-        <input type="text" name="title" value={bookState.title} onChange={onAddingBook} placeholder="Add book name" required />
-        <input type="text" name="author" value={bookState.author} onChange={onAddingBook} placeholder="Add author name" required />
+        <input type="text" name="title" value={bookState.title} onChange={addBook} placeholder="Add book name" required />
+        <input type="text" name="author" value={bookState.author} onChange={addBook} placeholder="Add author name" required />
+        <input type="text" name="category" value={bookState.category} onChange={addBook} placeholder="Add category name" required />
         <button type="submit">Submit form</button>
       </form>
     </div>
