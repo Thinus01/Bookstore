@@ -28,7 +28,7 @@ ul {
   height: 1.125rem;
   margin: 0 2.438rem 0 0;
   opacity: 0.5;
-  font-family: Montserrat, normal;
+  font-family: Montserrat, sans-serif;
   font-size: 0.875rem;
   font-weight: bold;
   font-stretch: normal;
@@ -55,7 +55,7 @@ ul {
   width: 6.688rem;
   height: 1.188rem;
   margin: 0.25rem 0 0;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, sans-serif;
   font-size: 0.875rem;
   font-weight: 300;
   font-stretch: normal;
@@ -63,14 +63,13 @@ ul {
   line-height: normal;
   letter-spacing: normal;
   color: #4386bf;
-
 }
 
 .Option {
   width: 1.688rem;
   height: 1.188rem;
   margin: 0.188rem 0 0.125rem 0;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, sans-serif;
   font-size: 0.875rem;
   font-weight: 300;
   font-stretch: normal;
@@ -85,7 +84,7 @@ ul {
 
 .OptionBtn {
   padding: 0;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, sans-serif;
   font-size: 0.875rem;
   font-stretch: normal;
   font-style: normal;
@@ -149,7 +148,7 @@ ul {
   width: 150%;
   border: none;
   border-radius: 5px;
-  background-color: #0290ff; 
+  background-color: #0290ff;
   color: white;
   padding: 10% 14%;
   font-size: 0.813rem;

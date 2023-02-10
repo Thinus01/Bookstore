@@ -22,7 +22,7 @@ nav {
   width: 3.688rem;
   height: 1rem;
   margin: 0 2.563rem 0.688rem 3%;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 0.813rem;
   font-weight: normal;
   font-stretch: normal;
@@ -38,7 +38,7 @@ nav {
   height: 1rem;
   margin: 0 41.5rem 0.688rem 2.563rem;
   opacity: 0.5;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 0.813rem;
   font-weight: normal;
   font-stretch: normal;
