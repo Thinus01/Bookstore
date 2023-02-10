@@ -1,6 +1,8 @@
 import './App.css';
 import React, { PureComponent } from 'react';
 import { Route, Routes, Link } from 'react-router-dom';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { BsPersonFill } from 'react-icons/bs';
 import Books from './components/bookList';
 import Categories from './components/categories';
 
@@ -9,11 +11,10 @@ class App extends PureComponent {
     return (
       <>
         <nav>
-          <ul id="UL">
-            <li className="Li"><Link to="/">Books</Link></li>
-            <li className="Li" id="CalcLi"><Link to="/Categories">Categories</Link></li>
-          </ul>
-          <h1>Welcome to our crazy bookstore</h1>
+          <span className="h1">Bookstore CMS</span>
+          <Link className="Books" to="/">BOOKS</Link>
+          <Link className="Categories" to="/Categories">CATEGORIES</Link>
+          <BsPersonFill className="icon" color="#0290ff" size={25} />
         </nav>
         <Routes>
           <Route path="/" element={<Books />} />
