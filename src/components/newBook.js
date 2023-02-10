@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { v4 } from 'uuid';
 import { addHandler } from '../redux/books/books';
+import styles from '../styles/newBook.module.css';
 
 const NewBook = () => {
   const [bookState, setBookState] = useState({
@@ -24,12 +25,12 @@ const NewBook = () => {
 
   return (
     <div>
-      <h2>ADD NEW BOOK</h2>
-      <form onSubmit={submitHandler}>
-        <input type="text" name="title" value={bookState.title} onChange={addBook} placeholder="Add book name" required />
-        <input type="text" name="author" value={bookState.author} onChange={addBook} placeholder="Add author name" required />
-        <input type="text" name="category" value={bookState.category} onChange={addBook} placeholder="Add category name" required />
-        <button type="submit">Submit form</button>
+      <h2 className={styles.h2}>ADD NEW BOOK</h2>
+      <form className={styles.form} onSubmit={submitHandler}>
+        <input id={styles.space} className={styles.input} type="text" name="title" value={bookState.title} onChange={addBook} placeholder="Add book name" required />
+        <input className={styles.input} type="text" name="author" value={bookState.author} onChange={addBook} placeholder="Add author name" required />
+        <input className={styles.input} type="text" name="category" value={bookState.category} onChange={addBook} placeholder="Add category name" required />
+        <button className={styles.button} type="submit">ADD BOOK</button>
       </form>
     </div>
   );

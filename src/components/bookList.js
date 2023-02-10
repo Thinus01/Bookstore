@@ -14,12 +14,8 @@ const BookList = () => {
 
   return (
     <section>
-      <NewBook />
       <div>
-        <p>Book</p>
-        <p>Author</p>
-        <p>Category</p>
-        <ul>
+        <div>
           {bookData.map((book) => (
             <Book
               title={book.title}
@@ -29,7 +25,8 @@ const BookList = () => {
               id={book.item_id}
             />
           ))}
-        </ul>
+        </div>
+        <NewBook />
       </div>
     </section>
   );
